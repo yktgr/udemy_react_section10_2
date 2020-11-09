@@ -1,9 +1,9 @@
-const initialState = [1, 2, 3, 4, 5];
+const intialstate = [];
 
-const imageUrls = (state = initialState, action) => {
+const imageUrls = (state = intialstate, action) => {
   switch (action.type) {
     case "RECEIVE_DATA":
-      return "data";
+      return action.payload;
 
     default:
       return state;
